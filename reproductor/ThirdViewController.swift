@@ -35,7 +35,8 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         print("viewdidload")
         super.viewDidLoad()
-        
+        myTableView2.delegate = self
+        myTableView2.dataSource = self
         crear()
         
         myTableView2.reloadData()
