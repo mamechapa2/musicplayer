@@ -18,13 +18,17 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var myTableView2: UITableView!
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("rows")
         return Playlists.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = Playlists[indexPath.row].name
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath2: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell2")
+        cell.textLabel?.text = Playlists[indexPath2.row].name
         
         return cell
     }
@@ -34,8 +38,9 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewdidload")
         // Do any additional setup after loading the view, typically from a nib.
-        crear()
+        //crear()
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,8 +49,9 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func crear(){
-        guard let pl1 = Playlist(name: "Prueba")
-        pl1.songs.append(songs[0])
+        
+        let pl1 = Playlist(name: "Prueba")
+        pl1?.songs.append(songs[0])
         
         Playlists.append(pl1!)
         
