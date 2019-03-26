@@ -12,6 +12,7 @@ import AVFoundation
 
 var favorites:[String] = []
 var Playlists:[Playlist] = []
+var selecPlaylist = 0
 
 class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -30,17 +31,17 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        selecPlaylist = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
     }
     override func viewDidLoad() {
-        print("viewdidload")
         super.viewDidLoad()
         myTableView2.delegate = self
         myTableView2.dataSource = self
+        
         crear()
         
         myTableView2.reloadData()
-        print(Playlists[1].name)
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,20 +50,15 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func crear(){
-        
         let pl1 = Playlist(name: "Prueba")
-        
+
         pl1?.addSong(song: songs[0])
         Playlists.append(pl1!)
-        print(Playlists[0].name)
-        print(Playlists[0].songs[0])
         
         let pl2 = Playlist(name: "Prueba2")
         
         pl2?.addSong(song: songs[1])
         Playlists.append(pl2!)
-        print(Playlists[1].name)
-        print(Playlists[1].songs[0])
     }
     
     

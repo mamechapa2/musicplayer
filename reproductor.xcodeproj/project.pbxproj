@@ -22,6 +22,7 @@
 		6877FF6E224AA0AC00C56E61 /* Mighty Fine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6877FF67224AA0AB00C56E61 /* Mighty Fine.mp3 */; };
 		6877FF6F224AA0AC00C56E61 /* Otis McMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6877FF68224AA0AB00C56E61 /* Otis McMusic.mp3 */; };
 		6877FF70224AA0AC00C56E61 /* Scarlet Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6877FF69224AA0AB00C56E61 /* Scarlet Fire.mp3 */; };
+		6877FF72224AE3B300C56E61 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF71224AE3B300C56E61 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		6877FF67224AA0AB00C56E61 /* Mighty Fine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mighty Fine.mp3"; sourceTree = "<group>"; };
 		6877FF68224AA0AB00C56E61 /* Otis McMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Otis McMusic.mp3"; sourceTree = "<group>"; };
 		6877FF69224AA0AB00C56E61 /* Scarlet Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Scarlet Fire.mp3"; sourceTree = "<group>"; };
+		6877FF71224AE3B300C56E61 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				0C6884102270498E00702AEB /* ThirdViewController.swift */,
 				0C68841222704D7300702AEB /* Playlist.swift */,
 				6877FF52224A986700C56E61 /* Main.storyboard */,
+				6877FF71224AE3B300C56E61 /* TableViewController.swift */,
 				6877FF55224A986700C56E61 /* Assets.xcassets */,
 				6877FF57224A986700C56E61 /* LaunchScreen.storyboard */,
 				6877FF5A224A986700C56E61 /* Info.plist */,
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */,
+				6877FF72224AE3B300C56E61 /* TableViewController.swift in Sources */,
 				6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */,
 				0C6884112270498E00702AEB /* ThirdViewController.swift in Sources */,
 				6877FF4F224A986700C56E61 /* FirstViewController.swift in Sources */,
