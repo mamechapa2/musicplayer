@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
@@ -39,7 +40,19 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        do{
+            let audioPath = Bundle.main.path(forResource: Playlists[selecPlaylist].songs[indexPath.row], ofType: ".mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            audioPlayer.play()
+            thisSong = indexPath.row
+            audioStuffed = true
+            print(thisSong)
+        }catch{
+            print ("ERROR")
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

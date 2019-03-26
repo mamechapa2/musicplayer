@@ -217,7 +217,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rv-tE-2Zt">
                                 <rect key="frame" x="16" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Volver"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="AhI-Ap-yOy"/>
                                 </connections>
