@@ -9,16 +9,20 @@
 import UIKit
 import AVFoundation
 
+struct playList {
+    var name: String
+    var songs:[String] = []
+}
+
 var songs:[String] = []
 var favorites:[String] = []
-ArrayList<playList> PlayLists = new ArrayList<playList>();
+var PlayLists = Array<playList>()
 var audioPlayer = AVAudioPlayer()
 var thisSong = 0
+var audioStuffed = false
+var firstOpen = true
 
-struct playList {
-  var name: String
-  var songs:[String] = []
-}
+
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -40,8 +44,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
-            
             thisSong = indexPath.row
+            audioStuffed = true
         }catch{
             print ("ERROR")
         }
@@ -49,8 +53,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         gettingSongName()
+        do{
+            if firstOpen == true{
+                let audioPath = Bundle.main.path(forResource: songs[1], ofType: ".mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+                thisSong = 1
+                audioStuffed = true
+                firstOpen = false
+            }
+        }catch{
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,7 +90,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     songs.append(mySong)
                 }
             }
-            
             myTableView.reloadData()
         }catch{
             print ("ERROR")
