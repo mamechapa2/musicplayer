@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Canciones-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="reproductor" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Canciones" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="0Np-PM-rLq" id="PLD-Hb-Glu"/>
                     </connections>
@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Second-->
+        <!--Reproductor-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="reproductor" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Reproductor" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="label" destination="db6-AA-qSY" id="tkc-5l-ed2"/>
                         <outlet property="myImageView" destination="gL9-A8-4uA" id="Bs1-8B-I2W"/>
@@ -154,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Playlists-->
         <scene sceneID="GbI-18-2sP">
             <objects>
                 <viewController id="rHi-s6-2Wj" customClass="ThirdViewController" customModule="reproductor" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,17 +181,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8SA-iH-3f1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ZpW-rV-a17"/>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="first" id="ZpW-rV-a17"/>
                     <connections>
                         <outlet property="myTableView2" destination="8GC-zo-LAf" id="Sfj-Cp-qvT"/>
-                        <segue destination="CHG-9K-Vgo" kind="show" identifier="segue" id="LAa-2t-cmy"/>
+                        <segue destination="CHG-9K-Vgo" kind="showDetail" identifier="segue" action="showViewController:sender:" id="LAa-2t-cmy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXa-g6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-1015"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Item-->
         <scene sceneID="h3c-Pk-bVf">
             <objects>
                 <viewController id="CHG-9K-Vgo" customClass="TableViewController" customModule="reproductor" customModuleProvider="target" sceneMemberID="viewController">
@@ -219,28 +219,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="rHi-s6-2Wj" kind="show" id="TIi-JQ-mwz"/>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="AhI-Ap-yOy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Yb3-gO-B1T"/>
                     </view>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="Item" id="O2X-4j-OCc"/>
                     <connections>
                         <outlet property="myTableView3" destination="jqh-g5-bAX" id="dtK-0Z-HAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-GU-Jx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="-1015.1424287856073"/>
+            <point key="canvasLocation" x="1655" y="-594"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="LAa-2t-cmy"/>
-        <segue reference="TIi-JQ-mwz"/>
-    </inferredMetricsTieBreakers>
 </document>
