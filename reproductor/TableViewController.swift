@@ -47,6 +47,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             thisSong = indexPath.row
+            songName = Playlists[selecPlaylist].songs[indexPath.row]
             audioStuffed = true
             print(thisSong)
         }catch{

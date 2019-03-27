@@ -13,13 +13,14 @@ import AVFoundation
 var favorites:[String] = []
 var Playlists:[Playlist] = []
 var selecPlaylist = 0
+var firstOpen2 = true
 
 class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var myTableView2: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(Playlists.count)
+        //print(Playlists.count)
         return Playlists.count
     }
     
@@ -39,7 +40,10 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         myTableView2.delegate = self
         myTableView2.dataSource = self
         
-        crear()
+        if firstOpen2{
+            crear()
+            firstOpen2 = false
+        }
         
         myTableView2.reloadData()
     }

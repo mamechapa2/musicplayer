@@ -55,6 +55,7 @@ class SecondViewController: UIViewController {
             if audioStuffed {
                 playThis(thisOne: songs[0])
                 thisSong=0
+                songName=songs[0]
                 label.text = songs[thisSong]
             }
         }
@@ -78,12 +79,12 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = songs[thisSong]
+        label.text = songName
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        label.text = songs[thisSong]
+        label.text = songName
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,7 @@ var audioPlayer = AVAudioPlayer()
 var thisSong = 0
 var audioStuffed = false
 var firstOpen = true
+var songName = ""
 
 
 
@@ -38,6 +39,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             thisSong = indexPath.row
+            songName = songs[indexPath.row]
             audioStuffed = true
             print(thisSong)
         }catch{
