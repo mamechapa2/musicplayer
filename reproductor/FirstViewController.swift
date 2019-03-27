@@ -52,6 +52,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if firstOpen{
             gettingSongName()
             firstOpen=false
+            songName=songs[0]
+            
         }
     }
 

@@ -11,13 +11,15 @@ import UIKit
 class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var myTableViewPlaylist: UITableView!
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(Playlists.count)
+        print("hey")
         return Playlists.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hola", for: indexPath)
-        
         cell.textLabel?.text = Playlists[indexPath.row].name
         
         return cell
