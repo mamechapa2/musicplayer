@@ -27,13 +27,14 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func prev(_ sender: Any) {
-        if thisSong == 1{
-            playThis(thisOne: songs[thisSong-1])
-            thisSong-=1
+        if thisSong == 0{
+            playThis(thisOne: songs[songs.count-1])
+            thisSong=songs.count-1
             label.text = songs[thisSong]
         }else{
-            /*playThis(thisOne: songs[songs.count-1])
-            label.text = songs[thisSong]*/
+            playThis(thisOne: songs[songs.count-1])
+            thisSong-=1
+            label.text = songs[thisSong]
         }
     }
     
@@ -43,8 +44,9 @@ class SecondViewController: UIViewController {
             thisSong+=1
             label.text = songs[thisSong]
         }else{
-            /*playThis(thisOne: songs[0])
-            label.text = songs[thisSong]*/
+            playThis(thisOne: songs[0])
+            thisSong=0
+            label.text = songs[thisSong]
         }
     }
     
