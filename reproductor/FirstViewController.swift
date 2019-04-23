@@ -10,8 +10,15 @@ import UIKit
 import AVFoundation
 
 var songs:[String] = []
+var favorites:[String] = []
+ArrayList<playList> PlayLists = new ArrayList<playList>();
 var audioPlayer = AVAudioPlayer()
 var thisSong = 0
+
+struct playList {
+  var name: String
+  var songs:[String] = []
+}
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
