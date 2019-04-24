@@ -81,6 +81,10 @@ class SecondViewController: UIViewController {
         label.text = songs[thisSong]
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        label.text = songs[thisSong]
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

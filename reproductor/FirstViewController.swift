@@ -46,6 +46,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             audioPlayer.play()
             thisSong = indexPath.row
             audioStuffed = true
+            print(thisSong)
         }catch{
             print ("ERROR")
         }
@@ -54,17 +55,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         gettingSongName()
-        do{
-            if firstOpen == true{
-                let audioPath = Bundle.main.path(forResource: songs[1], ofType: ".mp3")
-                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-                thisSong = 1
-                audioStuffed = true
-                firstOpen = false
-            }
-        }catch{
-            
-        }
     }
 
     override func didReceiveMemoryWarning() {
