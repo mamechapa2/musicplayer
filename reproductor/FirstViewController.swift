@@ -9,14 +9,7 @@
 import UIKit
 import AVFoundation
 
-struct playList {
-    var name: String
-    var songs:[String] = []
-}
-
 var songs:[String] = []
-var favorites:[String] = []
-var PlayLists = Array<playList>()
 var audioPlayer = AVAudioPlayer()
 var thisSong = 0
 var audioStuffed = false
