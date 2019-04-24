@@ -15,8 +15,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var myImageView: UIImageView!
     
     @IBAction func play(_ sender: Any) {
-        if audioPlayer.isPlaying == false{
+        if audioPlayer.isPlaying == false {
             audioPlayer.play()
+        }
+        
+        if audioStuffed == false {
+            playThis(thisOne: songs[0])
+            thisSong=0
+            label.text = songs[thisSong]
         }
     }
     
@@ -27,31 +33,37 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func prev(_ sender: Any) {
-        if thisSong == 0{
+        if thisSong == 0 && audioStuffed{
             playThis(thisOne: songs[songs.count-1])
-            thisSong = songs.count-1
+            thisSong=songs.count-1
             label.text = songs[thisSong]
         }else{
-            playThis(thisOne: songs[thisSong-1])
-            thisSong-=1
-            label.text = songs[thisSong]
+            if audioStuffed {
+                playThis(thisOne: songs[songs.count-1])
+                thisSong-=1
+                label.text = songs[thisSong]
+            }
         }
     }
     
     @IBAction func next(_ sender: Any) {
-        if thisSong < songs.count-1{
+        if thisSong < songs.count-1 && audioStuffed{
             playThis(thisOne: songs[thisSong+1])
             thisSong+=1
             label.text = songs[thisSong]
         }else{
-            playThis(thisOne: songs[0])
-            thisSong = 0
-            label.text = songs[thisSong]
+            if audioStuffed {
+                playThis(thisOne: songs[0])
+                thisSong=0
+                label.text = songs[thisSong]
+            }
         }
     }
     
     @IBAction func slider(_ sender: UISlider) {
-        audioPlayer.volume = sender.value
+        if audioStuffed{
+            audioPlayer.volume = sender.value
+        }
     }
     
     func playThis(thisOne:String){
@@ -68,6 +80,10 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         label.text = songs[thisSong]
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        label.text = songs[thisSong]
     }
 
     override func didReceiveMemoryWarning() {
