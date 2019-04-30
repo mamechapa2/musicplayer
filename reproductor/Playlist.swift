@@ -18,4 +18,8 @@ class Playlist: NSObject{
     init?(name: String){
         self.name = name
     }
+    
+    func addSong(song: String){
+        self.songs.append(song)
+    }
 }

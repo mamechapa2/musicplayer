@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "reproductor/ThirdViewController.swift"
+            timestampString = "578310507.3179049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reproductor.ThirdViewController.myTableView2.getter : weak Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "reproductor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macosx/Desktop/musicplayer/reproductor/ThirdViewController.swift"
+                  timestampString = "578308911.02309"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reproductor.ThirdViewController.myTableView2.setter : weak Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "reproductor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macosx/Desktop/musicplayer/reproductor/ThirdViewController.swift"
+                  timestampString = "578308911.025437"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reproductor.ThirdViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; reproductor.ThirdViewController"
+                  moduleName = "reproductor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macosx/Desktop/musicplayer/reproductor/ThirdViewController.swift"
+                  timestampString = "578308911.0279551"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reproductor.ThirdViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;reproductor.ThirdViewController&gt;"
+                  moduleName = "reproductor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macosx/Desktop/musicplayer/reproductor/ThirdViewController.swift"
+                  timestampString = "578308911.030452"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
