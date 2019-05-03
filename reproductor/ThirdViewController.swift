@@ -40,11 +40,6 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         myTableView2.delegate = self
         myTableView2.dataSource = self
         
-        if firstOpen2{
-            crear()
-            firstOpen2 = false
-        }
-        
         myTableView2.reloadData()
     }
     
@@ -53,17 +48,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
-    func crear(){
-        let pl1 = Playlist(name: "Prueba")
-
-        pl1?.addSong(song: songs[0])
-        Playlists.append(pl1!)
-        
-        let pl2 = Playlist(name: "Prueba2")
-        
-        pl2?.addSong(song: songs[1])
-        Playlists.append(pl2!)
-    }
+    
     
     
 }

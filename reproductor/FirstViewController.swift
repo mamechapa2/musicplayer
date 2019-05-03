@@ -51,6 +51,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
         if firstOpen{
             gettingSongName()
+            crear()
             firstOpen=false
             songName=songs[0]
             
@@ -85,7 +86,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             print ("ERROR")
         }
     }
-
+    
+    func crear(){
+        let pl1 = Playlist(name: "Prueba")
+        
+        pl1?.addSong(song: songs[0])
+        Playlists.append(pl1!)
+        
+        let pl2 = Playlist(name: "Prueba2")
+        
+        pl2?.addSong(song: songs[1])
+        Playlists.append(pl2!)
+    }
 
 }
 

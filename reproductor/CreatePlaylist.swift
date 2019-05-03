@@ -29,7 +29,6 @@ class CreatePlaylist: UIViewController {
             
             Playlists.append(pl1!)
             performSegue(withIdentifier: "saveSegue", sender: self)
-            
         }
     }
     /*
