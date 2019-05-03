@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
@@ -27,6 +28,7 @@ class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Playlists[indexPath.row].songs.append(songName)
+        savePlaylistTo()
         performSegue(withIdentifier: "addedSong", sender: self)
     }
     
@@ -42,7 +44,16 @@ class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func savePlaylistTo(){
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Playlists, toFile: Playlist.ArchiveURL.path)
+        
+        if isSuccessfulSave {
+            os_log("Playlist guardadas", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Fallo al cargar playlists", log: OSLog.default, type: .error)
+        }
+    }
     // MARK: - Table view data source
 
 

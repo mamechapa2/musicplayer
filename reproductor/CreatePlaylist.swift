@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class CreatePlaylist: UIViewController {
     @IBOutlet weak var textField: UITextField!
@@ -28,10 +29,21 @@ class CreatePlaylist: UIViewController {
             let pl1 = Playlist(name: textField.text!)
             
             Playlists.append(pl1!)
+            
+            savePlaylistTo()
             performSegue(withIdentifier: "saveSegue", sender: self)
         }
     }
-    /*
+    
+    func savePlaylistTo(){
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Playlists, toFile: Playlist.ArchiveURL.path)
+        
+        if isSuccessfulSave {
+            os_log("Playlist guardadas", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Fallo al cargar playlists", log: OSLog.default, type: .error)
+        }
+    }    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import os.log
 
 var songs:[String] = []
 var audioPlayer = AVAudioPlayer()
@@ -51,17 +52,25 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view, typically from a nib.
         if firstOpen{
             gettingSongName()
-            crear()
             firstOpen=false
             songName=songs[0]
-            
+        }
+        
+        if loadPlaylist() != nil {
+            Playlists = loadPlaylist()!
         }
     }
-
+    
+    
+    
+    private func loadPlaylist() -> [Playlist]?{
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func gettingSongName(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
