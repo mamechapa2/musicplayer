@@ -15,13 +15,16 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var myImageView: UIImageView!
     
     @IBAction func play(_ sender: Any) {
-        if audioPlayer.isPlaying == false {
+        if audioPlayer.isPlaying {
+           audioPlayer.pause()
+        }else{
             audioPlayer.play()
         }
         
         if audioStuffed == false {
             playThis(thisOne: songs[0])
             thisSong=0
+            songName=songs[thisSong]
             label.text = songs[thisSong]
         }
     }
@@ -41,6 +44,7 @@ class SecondViewController: UIViewController {
             if audioStuffed {
                 playThis(thisOne: songs[songs.count-1])
                 thisSong-=1
+                songName=songs[thisSong]
                 label.text = songs[thisSong]
             }
         }
@@ -50,11 +54,13 @@ class SecondViewController: UIViewController {
         if thisSong < songs.count-1 && audioStuffed{
             playThis(thisOne: songs[thisSong+1])
             thisSong+=1
+            songName=songs[thisSong]
             label.text = songs[thisSong]
         }else{
             if audioStuffed {
                 playThis(thisOne: songs[0])
                 thisSong=0
+                songName=songs[0]
                 label.text = songs[thisSong]
             }
         }
@@ -71,6 +77,7 @@ class SecondViewController: UIViewController {
             let audioPath = Bundle.main.path(forResource: thisOne, ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
+            songName=thisOne
         }catch{
             print ("ERROR")
         }
@@ -78,12 +85,12 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = songs[thisSong]
+        label.text = songName
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        label.text = songs[thisSong]
+        label.text = songName
     }
 
     override func didReceiveMemoryWarning() {

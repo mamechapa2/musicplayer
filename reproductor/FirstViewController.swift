@@ -8,19 +8,14 @@
 
 import UIKit
 import AVFoundation
-
-struct playList {
-    var name: String
-    var songs:[String] = []
-}
+import os.log
 
 var songs:[String] = []
-var favorites:[String] = []
-var PlayLists = Array<playList>()
 var audioPlayer = AVAudioPlayer()
 var thisSong = 0
 var audioStuffed = false
 var firstOpen = true
+var songName = ""
 
 
 
@@ -45,6 +40,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             thisSong = indexPath.row
+            songName = songs[indexPath.row]
             audioStuffed = true
             print(thisSong)
         }catch{
@@ -54,13 +50,27 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        gettingSongName()
+        if firstOpen{
+            gettingSongName()
+            firstOpen=false
+            songName=songs[0]
+        }
+        
+        if loadPlaylist() != nil {
+            Playlists = loadPlaylist()!
+        }
     }
-
+    
+    
+    
+    private func loadPlaylist() -> [Playlist]?{
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func gettingSongName(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
@@ -85,7 +95,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             print ("ERROR")
         }
     }
-
+    
+    func crear(){
+        let pl1 = Playlist(name: "Prueba")
+        
+        pl1?.addSong(song: songs[0])
+        Playlists.append(pl1!)
+        
+        let pl2 = Playlist(name: "Prueba2")
+        
+        pl2?.addSong(song: songs[1])
+        Playlists.append(pl2!)
+    }
 
 }
 
