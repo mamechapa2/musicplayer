@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import os.log
+import UserNotifications
 
 var songs:[String] = []
 var audioPlayer = AVAudioPlayer()
@@ -49,6 +50,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         if firstOpen{
             gettingSongName()
@@ -107,6 +110,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         pl2?.addSong(song: songs[1])
         Playlists.append(pl2!)
     }
+    
 
 }
 

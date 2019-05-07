@@ -8,8 +8,9 @@
 
 import UIKit
 import AVFoundation
+import UserNotifications
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
@@ -19,6 +20,7 @@ class SecondViewController: UIViewController {
            audioPlayer.pause()
         }else{
             audioPlayer.play()
+            notificaction(song: songName)
         }
         
         if audioStuffed == false {
@@ -26,6 +28,7 @@ class SecondViewController: UIViewController {
             thisSong=0
             songName=songs[thisSong]
             label.text = songs[thisSong]
+            notificaction(song: songName)
         }
     }
     
@@ -40,12 +43,14 @@ class SecondViewController: UIViewController {
             playThis(thisOne: songs[songs.count-1])
             thisSong=songs.count-1
             label.text = songs[thisSong]
+            notificaction(song: songName)
         }else{
             if audioStuffed {
                 playThis(thisOne: songs[songs.count-1])
                 thisSong-=1
                 songName=songs[thisSong]
                 label.text = songs[thisSong]
+                notificaction(song: songName)
             }
         }
     }
@@ -56,12 +61,14 @@ class SecondViewController: UIViewController {
             thisSong+=1
             songName=songs[thisSong]
             label.text = songs[thisSong]
+            notificaction(song: songName)
         }else{
             if audioStuffed {
                 playThis(thisOne: songs[0])
                 thisSong=0
                 songName=songs[0]
                 label.text = songs[thisSong]
+                notificaction(song: songName)
             }
         }
     }
@@ -78,6 +85,7 @@ class SecondViewController: UIViewController {
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             songName=thisOne
+            notificaction(song: songName)
         }catch{
             print ("ERROR")
         }
@@ -85,6 +93,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNUserNotificationCenter.current().delegate = self
         label.text = songName
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -96,6 +105,28 @@ class SecondViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func notificaction(song: String){
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+        
+        let content = UNMutableNotificationContent()
+        content.title = song
+        content.sound = UNNotificationSound.default()
+        
+        let request = UNNotificationRequest(identifier: "cancion", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().add(request){
+            (error) in
+            if let error = error {
+                print("Error al mandar notificacion")
+            }
+        }
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound])
     }
 
 
