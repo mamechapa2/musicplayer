@@ -17,22 +17,63 @@ var thisSong = 0
 var audioStuffed = false
 var firstOpen = true
 var songName = ""
+var filteredSongs = [String]()
 
 
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
 
     @IBOutlet weak var myTableView: UITableView!
     
+    var searchController : UISearchController!
+    
+    var resultsController = UITableViewController()
+    
+    func createSearchBar(){
+        self.searchController = UISearchController(searchResultsController: self.resultsController)
+        
+        self.myTableView.tableHeaderView = self.searchController.searchBar
+        
+        self.searchController.searchResultsUpdater = self as UISearchResultsUpdating
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+        filteredSongs = songs.filter { (song: String) -> Bool in
+            if song.lowercased().contains(self.searchController.searchBar.text!.lowercased()){
+                return true
+            }else{
+                return false
+            }
+        }
+        
+        myTableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return songs.count
+        
+        if tableView == self.myTableView{
+            return songs.count
+        }else{
+            return filteredSongs.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = songs[indexPath.row]
         
-        return cell
+        if tableView == self.myTableView{
+            let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell.textLabel?.text = songs[indexPath.row]
+            
+            return cell
+        }else{
+            let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+            cell.textLabel?.text = filteredSongs[indexPath.row]
+            
+            return cell
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -62,9 +103,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if loadPlaylist() != nil {
             Playlists = loadPlaylist()!
         }
+        
+        createSearchBar()
+        tableSettings()
+        
     }
     
-    
+    func tableSettings(){
+        self.myTableView.dataSource = self
+        
+        self.myTableView.delegate = self
+    }
     
     private func loadPlaylist() -> [Playlist]?{
         return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
