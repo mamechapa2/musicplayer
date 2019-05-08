@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="94" y="1050"/>
         </scene>
         <!--Reproductor-->
         <scene sceneID="wg7-f3-ORb">
@@ -78,40 +78,20 @@
                                 <rect key="frame" x="16" y="64" width="343" height="343"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPm-wm-POU">
-                                <rect key="frame" x="16" y="441" width="100" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPm-wm-POU">
+                                <rect key="frame" x="124" y="421" width="126" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34962657471221459" green="1" blue="0.32927552965097262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play" image="70776.png"/>
                                 <connections>
                                     <action selector="play:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Lsb-9g-Ssy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h51-wX-nfN">
-                                <rect key="frame" x="16" y="515" width="100" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h51-wX-nfN">
+                                <rect key="frame" x="16" y="500" width="67" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34962657470000003" green="1" blue="0.32927552970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Prev"/>
+                                <state key="normal" title="Prev" image="Left_Carrot_Filled-512.png"/>
                                 <connections>
                                     <action selector="prev:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="QZ7-Yp-YWA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-aq-bTy">
-                                <rect key="frame" x="259" y="515" width="100" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34962657470000003" green="1" blue="0.32927552970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="next:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e3v-Fj-Phk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3F-KF-QK8">
-                                <rect key="frame" x="259" y="441" width="100" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34962657470000003" green="1" blue="0.32927552970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Pause"/>
-                                <connections>
-                                    <action selector="pause:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="xwP-jd-AAi"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jLt-w6-XOz">
@@ -122,11 +102,19 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIU-mW-4FD">
-                                <rect key="frame" x="165" y="527" width="45" height="30"/>
+                                <rect key="frame" x="314" y="26" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Añadir"/>
                                 <connections>
                                     <segue destination="VHl-9X-yqf" kind="show" id="Nid-Fe-qwI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-aq-bTy">
+                                <rect key="frame" x="292" y="500" width="67" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next" image="a.png"/>
+                                <connections>
+                                    <action selector="next:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e3v-Fj-Phk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="2093.5999999999999" y="497.90104947526243"/>
         </scene>
         <!--Add To Playlist-->
         <scene sceneID="qYH-2Y-ch4">
@@ -185,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keD-0i-fYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736.8" y="356.67166416791605"/>
+            <point key="canvasLocation" x="858" y="930"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -240,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONJ-FL-nHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-1783.3583208395803"/>
+            <point key="canvasLocation" x="3102" y="-150"/>
         </scene>
         <!--Playlists-->
         <scene sceneID="GbI-18-2sP">
@@ -285,7 +273,43 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXa-g6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-1015"/>
+            <point key="canvasLocation" x="1534" y="-1582"/>
+        </scene>
+        <!--Delete Songs From Playlist-->
+        <scene sceneID="frH-M7-MZL">
+            <objects>
+                <viewController id="KYE-I7-Oor" customClass="DeleteSongsFromPlaylist" customModule="reproductor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h1O-d2-qRr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-FK-JuZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell4" id="vH7-kx-PnY">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vH7-kx-PnY" id="2ws-eS-0ok">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Tnk-2K-18x"/>
+                    </view>
+                    <connections>
+                        <outlet property="myTableViewDelete" destination="vcd-FK-JuZ" id="QwI-As-XfO"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="deletedSong" id="Bx7-fg-sk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgk-BT-lkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3214" y="-1219"/>
         </scene>
         <!--Item-->
         <scene sceneID="h3c-Pk-bVf">
@@ -318,6 +342,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMc-6j-q4K">
+                                <rect key="frame" x="315" y="20" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Borrar"/>
+                                <connections>
+                                    <segue destination="KYE-I7-Oor" kind="show" id="TqK-Th-szw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Yb3-gO-B1T"/>
@@ -329,15 +361,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-GU-Jx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-1015"/>
+            <point key="canvasLocation" x="1535" y="-520"/>
         </scene>
     </scenes>
     <resources>
+        <image name="70776.png" width="512" height="512"/>
+        <image name="Left_Carrot_Filled-512.png" width="512" height="512"/>
+        <image name="a.png" width="512" height="512"/>
         <image name="default-release-cd.png" width="600" height="600"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wQe-EF-PxB"/>
+        <segue reference="Bx7-fg-sk3"/>
     </inferredMetricsTieBreakers>
 </document>

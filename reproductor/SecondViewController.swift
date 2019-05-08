@@ -111,8 +111,9 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
         
         let content = UNMutableNotificationContent()
-        content.title = song
-        content.sound = UNNotificationSound.default()
+        content.title = "Reproduciendo"
+        content.body = song
+        //content.sound = UNNotificationSound.default()
         
         let request = UNNotificationRequest(identifier: "cancion", content: content, trigger: trigger)
         
