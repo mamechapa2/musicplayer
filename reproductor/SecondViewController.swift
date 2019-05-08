@@ -14,6 +14,15 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var moverseCancion: UISlider!
+    
+    //https://www.youtube.com/watch?v=S3BSK8UVJyc
+    @IBAction func changeAudioTime(_ sender: AnyObject) {
+        audioPlayer.stop()
+        audioPlayer.currentTime = TimeInterval(moverseCancion.value)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+    }
     
     @IBAction func play(_ sender: Any) {
         if audioPlayer.isPlaying {
@@ -44,6 +53,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
             thisSong=songs.count-1
             label.text = songs[thisSong]
             notificaction(song: songName)
+            moverseCancion.maximumValue = Float(audioPlayer.duration)
         }else{
             if audioStuffed {
                 playThis(thisOne: songs[songs.count-1])
@@ -51,6 +61,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
                 songName=songs[thisSong]
                 label.text = songs[thisSong]
                 notificaction(song: songName)
+                moverseCancion.maximumValue = Float(audioPlayer.duration)
             }
         }
     }
@@ -62,6 +73,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
             songName=songs[thisSong]
             label.text = songs[thisSong]
             notificaction(song: songName)
+            moverseCancion.maximumValue = Float(audioPlayer.duration)
         }else{
             if audioStuffed {
                 playThis(thisOne: songs[0])
@@ -69,6 +81,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
                 songName=songs[0]
                 label.text = songs[thisSong]
                 notificaction(song: songName)
+                moverseCancion.maximumValue = Float(audioPlayer.duration)
             }
         }
     }
@@ -95,11 +108,13 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
         super.viewDidLoad()
         UNUserNotificationCenter.current().delegate = self
         label.text = songName
+        moverseCancion.maximumValue = Float(audioPlayer.duration)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         label.text = songName
+        moverseCancion.maximumValue = Float(audioPlayer.duration)
     }
 
     override func didReceiveMemoryWarning() {
