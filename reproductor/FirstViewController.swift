@@ -56,6 +56,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         if firstOpen{
             gettingSongName()
             firstOpen=false
+            do{
+                let audioPath = Bundle.main.path(forResource: songs[0], ofType: ".mp3")
+                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            }catch{
+                print("error viewdidload firstviewcontroller")
+            }
             songName=songs[0]
         }
         

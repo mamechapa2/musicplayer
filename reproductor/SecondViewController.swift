@@ -109,12 +109,16 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
         UNUserNotificationCenter.current().delegate = self
         label.text = songName
         moverseCancion.maximumValue = Float(audioPlayer.duration)
+        
+        let timer = Timer.scheduledTimer(timeInterval: 0.1,target: self, selector: Selector("updateSlider"), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         label.text = songName
         moverseCancion.maximumValue = Float(audioPlayer.duration)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -139,6 +143,11 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
                 print("Error al mandar notificacion")
             }
         }
+    }
+    
+    @objc func updateSlider(){
+        moverseCancion.value = Float(audioPlayer.currentTime)
+        NSLog(String(Float(audioPlayer.currentTime)))
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
