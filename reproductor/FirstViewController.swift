@@ -12,7 +12,9 @@ import os.log
 import UserNotifications
 
 var songs:[String] = []
-var audioPlayer = AVAudioPlayer()
+var audioPlayer = AVAudioPlayerNode()
+var equlizador = AVAudioUnitEQ()
+var audioEngine = AVAudioEngine()
 var thisSong = 0
 var audioStuffed = false
 var firstOpen = true
@@ -38,7 +40,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         do{
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            try audioPlayer = AVAudioPlayerNode(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             thisSong = indexPath.row
             songName = songs[indexPath.row]
@@ -58,7 +60,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             firstOpen=false
             do{
                 let audioPath = Bundle.main.path(forResource: songs[0], ofType: ".mp3")
-                try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+                try audioPlayer = AVAudioPlayerNode(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             }catch{
                 print("error viewdidload firstviewcontroller")
             }
@@ -70,7 +72,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
-    
+    func cargarEquilizador(){
+        equalizador = AVAudioUnitEQ(numberOfBands: 5)
+        audioEngine.attach(audioPlayer)
+        audioEng
+    }
     
     private func loadPlaylist() -> [Playlist]?{
         return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]

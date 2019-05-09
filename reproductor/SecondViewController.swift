@@ -95,7 +95,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     func playThis(thisOne:String){
         do{
             let audioPath = Bundle.main.path(forResource: thisOne, ofType: ".mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            try audioPlayer = AVAudioPlayerNode(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             audioPlayer.play()
             songName=thisOne
             notificaction(song: songName)
