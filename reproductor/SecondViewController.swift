@@ -104,6 +104,22 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
         }
     }
     
+    func cambiarCaratula(){
+        let audioPath = Bundle.main.path(forResource: songName, ofType: ".mp3")
+        let playerItem = AVPlayerItem(url: NSURL(fileURLWithPath: audioPath!) as URL)
+        let metadata = playerItem.asset.metadata as! [AVMetadataItem]
+        
+        if metadata[0].commonKey!.rawValue == "artwork"{
+            if let image = UIImage(data: (metadata[0].value as! NSData) as Data){
+                myImageView.image = image
+                print("caratula")
+            }
+            
+        }else{
+            myImageView.image = 
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UNUserNotificationCenter.current().delegate = self
