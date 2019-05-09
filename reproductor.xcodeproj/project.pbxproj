@@ -27,7 +27,9 @@
 		6814D310228495A400CA5B08 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D307228495A400CA5B08 /* player.png */; };
 		6814D311228495A400CA5B08 /* playlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D308228495A400CA5B08 /* playlist.png */; };
 		6814D312228495A400CA5B08 /* songs.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D309228495A400CA5B08 /* songs.png */; };
-		6814D314228496B100CA5B08 /* tabbar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D313228496B000CA5B08 /* tabbar2.png */; };
+		6814D317228499A400CA5B08 /* tabbar3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D315228499A300CA5B08 /* tabbar3.png */; };
+		6814D318228499A400CA5B08 /* tabbar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D316228499A400CA5B08 /* tabbar1.png */; };
+		6814D31A228499CE00CA5B08 /* tabbar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D319228499CE00CA5B08 /* tabbar2.png */; };
 		6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4C224A986700C56E61 /* AppDelegate.swift */; };
 		6877FF4F224A986700C56E61 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4E224A986700C56E61 /* FirstViewController.swift */; };
 		6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF50224A986700C56E61 /* SecondViewController.swift */; };
@@ -67,7 +69,9 @@
 		6814D307228495A400CA5B08 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = reproductor/Icons/player.png; sourceTree = SOURCE_ROOT; };
 		6814D308228495A400CA5B08 /* playlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playlist.png; path = reproductor/Icons/playlist.png; sourceTree = SOURCE_ROOT; };
 		6814D309228495A400CA5B08 /* songs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = songs.png; path = reproductor/Icons/songs.png; sourceTree = SOURCE_ROOT; };
-		6814D313228496B000CA5B08 /* tabbar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar2.png; path = Assets.xcassets/ios/AppIcon.appiconset/tabbar2.png; sourceTree = "<group>"; };
+		6814D315228499A300CA5B08 /* tabbar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar3.png; path = "reproductor/New Group/tabbar3.png"; sourceTree = SOURCE_ROOT; };
+		6814D316228499A400CA5B08 /* tabbar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar1.png; path = "reproductor/New Group/tabbar1.png"; sourceTree = SOURCE_ROOT; };
+		6814D319228499CE00CA5B08 /* tabbar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar2.png; path = "reproductor/New Group/tabbar2.png"; sourceTree = SOURCE_ROOT; };
 		6877FF49224A986700C56E61 /* reproductor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reproductor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6877FF4C224A986700C56E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6877FF4E224A986700C56E61 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,9 @@
 		6814D2F82284955600CA5B08 /* Iconos */ = {
 			isa = PBXGroup;
 			children = (
+				6814D316228499A400CA5B08 /* tabbar1.png */,
+				6814D319228499CE00CA5B08 /* tabbar2.png */,
+				6814D315228499A300CA5B08 /* tabbar3.png */,
 				0C24737E228181E00038AC35 /* default-release-cd.png */,
 				0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */,
 				6814D304228495A400CA5B08 /* addtoplaylist.png */,
@@ -152,7 +159,6 @@
 				6877FF55224A986700C56E61 /* Assets.xcassets */,
 				6877FF57224A986700C56E61 /* LaunchScreen.storyboard */,
 				6877FF5A224A986700C56E61 /* Info.plist */,
-				6814D313228496B000CA5B08 /* tabbar2.png */,
 				6814D2F82284955600CA5B08 /* Iconos */,
 				6877FF62224AA0AB00C56E61 /* Songs */,
 			);
@@ -240,10 +246,10 @@
 				6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 in Resources */,
 				0C24737F228181E00038AC35 /* default-release-cd.png in Resources */,
 				6877FF70224AA0AC00C56E61 /* Scarlet Fire.mp3 in Resources */,
+				6814D31A228499CE00CA5B08 /* tabbar2.png in Resources */,
 				0C72ACA32282BA1F00AD7E40 /* a.png in Resources */,
 				6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */,
 				6814D3002284959000CA5B08 /* Aitana - Teléfono.mp3 in Resources */,
-				6814D314228496B100CA5B08 /* tabbar2.png in Resources */,
 				6814D311228495A400CA5B08 /* playlist.png in Resources */,
 				6877FF59224A986700C56E61 /* LaunchScreen.storyboard in Resources */,
 				6814D30D228495A400CA5B08 /* addtoplaylist.png in Resources */,
@@ -252,8 +258,10 @@
 				6877FF6F224AA0AC00C56E61 /* Otis McMusic.mp3 in Resources */,
 				6877FF6E224AA0AC00C56E61 /* Mighty Fine.mp3 in Resources */,
 				6877FF6D224AA0AC00C56E61 /* In Case You Forgot.mp3 in Resources */,
+				6814D318228499A400CA5B08 /* tabbar1.png in Resources */,
 				6877FF6B224AA0AC00C56E61 /* Find My Way Home.mp3 in Resources */,
 				6814D30A228495A400CA5B08 /* next.png in Resources */,
+				6814D317228499A400CA5B08 /* tabbar3.png in Resources */,
 				6877FF56224A986700C56E61 /* Assets.xcassets in Resources */,
 				6814D30C228495A400CA5B08 /* play.png in Resources */,
 				6814D312228495A400CA5B08 /* songs.png in Resources */,

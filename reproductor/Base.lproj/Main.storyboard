@@ -50,7 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Canciones" image="first" selectedImage="tabbar2.png" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Canciones" image="first" selectedImage="tabbar1.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="0Np-PM-rLq" id="PLD-Hb-Glu"/>
                     </connections>
@@ -273,7 +273,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8SA-iH-3f1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Playlists" image="first" id="ZpW-rV-a17"/>
+                    <tabBarItem key="tabBarItem" title="Playlists" image="first" selectedImage="tabbar3.png" id="ZpW-rV-a17"/>
                     <connections>
                         <outlet property="myTableView2" destination="8GC-zo-LAf" id="Sfj-Cp-qvT"/>
                         <segue destination="CHG-9K-Vgo" kind="showDetail" identifier="segue" id="LAa-2t-cmy"/>
@@ -385,9 +385,11 @@
         <image name="Left_Carrot_Filled-512.png" width="512" height="512"/>
         <image name="a.png" width="512" height="512"/>
         <image name="default-release-cd.png" width="600" height="600"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="tabbar2.png" width="29" height="29"/>
+        <image name="first" width="20" height="20"/>
+        <image name="second" width="20" height="20"/>
+        <image name="tabbar1.png" width="20" height="20"/>
+        <image name="tabbar2.png" width="20" height="20"/>
+        <image name="tabbar3.png" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ws4-us-qPn"/>
