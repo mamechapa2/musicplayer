@@ -50,7 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Canciones" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Canciones" image="first" selectedImage="tabbar2.png" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="0Np-PM-rLq" id="PLD-Hb-Glu"/>
                     </connections>
@@ -128,7 +128,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reproductor" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Reproductor" image="second" selectedImage="tabbar2.png" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="label" destination="db6-AA-qSY" id="tkc-5l-ed2"/>
                         <outlet property="moverseCancion" destination="tr3-sf-dbZ" id="5Do-GJ-36W"/>
@@ -387,6 +387,7 @@
         <image name="default-release-cd.png" width="600" height="600"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="tabbar2.png" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ws4-us-qPn"/>
