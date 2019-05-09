@@ -14,6 +14,9 @@
 		0C72ACA12282B94C00AD7E40 /* Left_Carrot_Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */; };
 		0C72ACA32282BA1F00AD7E40 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72ACA22282BA1F00AD7E40 /* a.png */; };
 		0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */; };
+		6814D2D822848CC300CA5B08 /* ID3Edit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6814D2D722848CC200CA5B08 /* ID3Edit.framework */; };
+		6814D2D922848D3C00CA5B08 /* ID3Edit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6814D2D722848CC200CA5B08 /* ID3Edit.framework */; };
+		6814D2DA22848D3C00CA5B08 /* ID3Edit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6814D2D722848CC200CA5B08 /* ID3Edit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4C224A986700C56E61 /* AppDelegate.swift */; };
 		6877FF4F224A986700C56E61 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4E224A986700C56E61 /* FirstViewController.swift */; };
 		6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF50224A986700C56E61 /* SecondViewController.swift */; };
@@ -32,6 +35,20 @@
 		6877FF76224AFBA300C56E61 /* AddToPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF75224AFBA300C56E61 /* AddToPlaylist.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6814D2DB22848D3C00CA5B08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6814D2DA22848D3C00CA5B08 /* ID3Edit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C24737E228181E00038AC35 /* default-release-cd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-release-cd.png"; sourceTree = "<group>"; };
 		0C6884102270498E00702AEB /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +57,7 @@
 		0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left_Carrot_Filled-512.png"; sourceTree = "<group>"; };
 		0C72ACA22282BA1F00AD7E40 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSongsFromPlaylist.swift; sourceTree = "<group>"; };
+		6814D2D722848CC200CA5B08 /* ID3Edit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ID3Edit.framework; sourceTree = "<group>"; };
 		6877FF49224A986700C56E61 /* reproductor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reproductor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6877FF4C224A986700C56E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6877FF4E224A986700C56E61 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6814D2D822848CC300CA5B08 /* ID3Edit.framework in Frameworks */,
+				6814D2D922848D3C00CA5B08 /* ID3Edit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +110,7 @@
 		6877FF4B224A986700C56E61 /* reproductor */ = {
 			isa = PBXGroup;
 			children = (
+				6814D2D722848CC200CA5B08 /* ID3Edit.framework */,
 				0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */,
 				6877FF4C224A986700C56E61 /* AppDelegate.swift */,
 				6877FF4E224A986700C56E61 /* FirstViewController.swift */,
@@ -136,6 +157,7 @@
 				6877FF45224A986700C56E61 /* Sources */,
 				6877FF46224A986700C56E61 /* Frameworks */,
 				6877FF47224A986700C56E61 /* Resources */,
+				6814D2DB22848D3C00CA5B08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +377,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/reproductor",
+				);
 				INFOPLIST_FILE = reproductor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mamechapa.reproductor;
@@ -369,6 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/reproductor",
+				);
 				INFOPLIST_FILE = reproductor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mamechapa.reproductor;

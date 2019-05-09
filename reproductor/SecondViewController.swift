@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import UserNotifications
+import ID3Edit
 
 class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
 
@@ -117,6 +118,13 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     override func viewDidAppear(_ animated: Bool) {
         label.text = songName
         moverseCancion.maximumValue = Float(audioPlayer.duration)
+    }
+    
+    func cambiarCaratula(){
+        let audioPath = Bundle.main.path(forResource: songName, ofType: ".mp3")
+        let mp3File = try MP3File(path: audioPath)
+        
+        mp3File.getArtwork()
         
         
     }
