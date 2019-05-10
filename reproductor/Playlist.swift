@@ -9,10 +9,12 @@
 import UIKit
 import os.log
 
+//Clase playlist que almacena tanto el nombre como las canciones de una playlist
 class Playlist: NSObject, NSCoding{
-    var name: String = ""
-    var songs:[String] = []
+    var name: String = "" //Nombre de la playlist
+    var songs:[String] = [] //Array para las canciones de la playlist
     
+    //Variables persist data
     static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("playlist")
@@ -27,16 +29,19 @@ class Playlist: NSObject, NSCoding{
         aCoder.encode(songs, forKey: PropertyKey.songs)
     }
     
+    //Init para las playlist
     init?(name: String){
         self.name = name
     }
     
+    //Init para cargar playlist de memoria
     convenience init?(name: String, songs: [String]){
         self.init(name: name)
         
         self.songs = songs
     }
     
+    //Funcion que añade una cancion a la playlist
     func addSong(song: String){
         self.songs.append(song)
     }

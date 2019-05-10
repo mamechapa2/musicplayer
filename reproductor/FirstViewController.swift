@@ -23,32 +23,6 @@ var songName = ""
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
-    
-    //Table view, funciones para configurarlo
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return songs.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
-        cell.textLabel?.text = songs[indexPath.row]
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        do{
-            let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
-            audioPlayer.play()
-            thisSong = indexPath.row
-            songName = songs[indexPath.row]
-            audioStuffed = true
-            print(thisSong)
-        }catch{
-            print ("ERROR")
-        }
-    }
 
     //Viewdidload
     override func viewDidLoad() {
@@ -74,15 +48,43 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             Playlists = loadPlaylist()!
         }
     }
-    
-    //Carga las playlist de memoria
-    private func loadPlaylist() -> [Playlist]?{
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Table view, funciones para configurarlo
+    //Muestra todas las canciones y sus nombres
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return songs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        cell.textLabel?.text = songs[indexPath.row]
+        
+        return cell
+    }
+    
+    //Si se toca encima de una de las canciones, esta empieza a reproducirse
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        do{
+            let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            audioPlayer.play()
+            thisSong = indexPath.row //Guardamos la posicion de la cancion en el array de canciones
+            songName = songs[indexPath.row] //Guardamos el nombre de la cancion para actualizar su nombre en el label de la vista de reproduccion
+            audioStuffed = true
+            print(thisSong) //debug
+        }catch{
+            print ("ERROR")
+        }
+    }
+
+    //Carga las playlist de memoria
+    private func loadPlaylist() -> [Playlist]?{
+        return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
     }
     
     //Obtiene todos los nombres de las canciones y los guarda en un array para poder reproducirlas
