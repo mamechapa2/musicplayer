@@ -26,12 +26,9 @@ class DeleteSongsFromPlaylist:  UIViewController, UITableViewDelegate, UITableVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - Table view data source
-    
-    
+
+    //Table view, funciones para configurarlo
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return Playlists[selecPlaylist].songs.count
     }
     
@@ -49,6 +46,7 @@ class DeleteSongsFromPlaylist:  UIViewController, UITableViewDelegate, UITableVi
         performSegue(withIdentifier: "deletedSong", sender: self)
     }
     
+    //Guarda las playlist en memoria si se modifican con persist data
     func savePlaylistTo(){
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Playlists, toFile: Playlist.ArchiveURL.path)
         

@@ -24,6 +24,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var myTableView: UITableView!
     
+    //Table view, funciones para configurarlo
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
     }
@@ -48,14 +49,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             print ("ERROR")
         }
     }
+
+    //Viewdidload
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //Si el reproductor se abre por primera vez
         if firstOpen{
-            gettingSongName()
+            gettingSongName() //Cargamos las canciones
             firstOpen=false
+
+            //Carga la primera cancion en el reproductor
             do{
                 let audioPath = Bundle.main.path(forResource: songs[0], ofType: ".mp3")
                 try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
@@ -65,22 +69,23 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             songName=songs[0]
         }
         
+        //Carga las playlist que hayamos guardado en memoria
         if loadPlaylist() != nil {
             Playlists = loadPlaylist()!
         }
     }
     
-    
-    
+    //Carga las playlist de memoria
     private func loadPlaylist() -> [Playlist]?{
         return NSKeyedUnarchiver.unarchiveObject(withFile: Playlist.ArchiveURL.path) as? [Playlist]
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
+    //Obtiene todos los nombres de las canciones y los guarda en un array para poder reproducirlas
     func gettingSongName(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
         
@@ -105,6 +110,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
     }
     
+    //Crea playlist de prueba (debug)
     func crear(){
         let pl1 = Playlist(name: "Prueba")
         

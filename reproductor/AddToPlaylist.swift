@@ -13,9 +13,25 @@ class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
     @IBOutlet weak var myTableViewPlaylist: UITableView!
     
+    //Viewdidload
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        myTableViewPlaylist.delegate = self
+        myTableViewPlaylist.dataSource = self
+        
+        myTableViewPlaylist.reloadData()
+    }
+
+    //
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    //Table view, funciones para configurarlo
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(Playlists.count)
-        print("hey")
+        //print(Playlists.count)
+        //print("hey")
         return Playlists.count
     }
     
@@ -26,25 +42,14 @@ class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return cell
     }
     
+    //Si pulsamos sobre una cancion en el table view, esta sera borrada. Despues se guardara en memoria la playlist
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Playlists[indexPath.row].songs.append(songName)
         savePlaylistTo()
         performSegue(withIdentifier: "addedSong", sender: self)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        myTableViewPlaylist.delegate = self
-        myTableViewPlaylist.dataSource = self
-        
-        myTableViewPlaylist.reloadData()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    //Guarda las playlist en memoria si se modifican
     func savePlaylistTo(){
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Playlists, toFile: Playlist.ArchiveURL.path)
         
@@ -53,9 +58,5 @@ class AddToPlaylist: UIViewController, UITableViewDelegate, UITableViewDataSourc
         } else {
             os_log("Fallo al cargar playlists", log: OSLog.default, type: .error)
         }
-    }
-    // MARK: - Table view data source
-
-
-    
+    }   
 }
