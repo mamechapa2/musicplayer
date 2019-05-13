@@ -12,6 +12,7 @@ import AVFoundation
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var myTableView3: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView3.delegate = self
@@ -22,11 +23,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - Table view data source
-
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows

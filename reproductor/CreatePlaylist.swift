@@ -10,20 +10,26 @@ import UIKit
 import os.log
 
 class CreatePlaylist: UIViewController {
+
+    //VARIABLES
+    //Campo de texto
     @IBOutlet weak var textField: UITextField!
     
+    //VIEWDIDLOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    //DIDRECEIVEMEMORYWARNING
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    //SAVEPLAYLIST
+    /*Espera la pulsacion del boton de guardar.
+    Una vez pulsado creara una playlist nueva con el nombre introducido en el campo de texto.
+    Por ultimo guardara las playlist en memoria y realizara el segue.*/
     @IBAction func savePlaylist(_ sender: UIButton) {
         if (textField.text != " "){
             let pl1 = Playlist(name: textField.text!)
@@ -35,6 +41,9 @@ class CreatePlaylist: UIViewController {
         }
     }
     
+    //SAVEPLAYLISTTO
+
+    //Guarda las playlist en memoria cada vez que se modifican o crean nuevas.
     func savePlaylistTo(){
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(Playlists, toFile: Playlist.ArchiveURL.path)
         
@@ -43,14 +52,5 @@ class CreatePlaylist: UIViewController {
         } else {
             os_log("Fallo al cargar playlists", log: OSLog.default, type: .error)
         }
-    }    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
