@@ -7,8 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C24737F228181E00038AC35 /* default-release-cd.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C24737E228181E00038AC35 /* default-release-cd.png */; };
 		0C6884112270498E00702AEB /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6884102270498E00702AEB /* ThirdViewController.swift */; };
 		0C68841322704D7300702AEB /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68841222704D7300702AEB /* Playlist.swift */; };
+		0C72AC9D2282B8A000AD7E40 /* 70776.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72AC9C2282B8A000AD7E40 /* 70776.png */; };
+		0C72ACA12282B94C00AD7E40 /* Left_Carrot_Filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */; };
+		0C72ACA32282BA1F00AD7E40 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72ACA22282BA1F00AD7E40 /* a.png */; };
+		0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */; };
+		0CBB6B88228AB9CA003A563F /* pause2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB6B87228AB9CA003A563F /* pause2.png */; };
+		0CBB6B8A228AC011003A563F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB6B89228AC011003A563F /* settings.png */; };
+		0CBB6B8C228AC07A003A563F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */; };
+		6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */; };
+		6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */; };
+		6814D2FF2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */; };
+		6814D3002284959000CA5B08 /* Aitana - Telefono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */; };
+		6814D30A228495A400CA5B08 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D301228495A300CA5B08 /* next.png */; };
+		6814D30B228495A400CA5B08 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D302228495A300CA5B08 /* prev.png */; };
+		6814D30C228495A400CA5B08 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D303228495A400CA5B08 /* play.png */; };
+		6814D30D228495A400CA5B08 /* addtoplaylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D304228495A400CA5B08 /* addtoplaylist.png */; };
+		6814D30E228495A400CA5B08 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D305228495A400CA5B08 /* pause.png */; };
+		6814D30F228495A400CA5B08 /* deletefromplaylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D306228495A400CA5B08 /* deletefromplaylist.png */; };
+		6814D310228495A400CA5B08 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D307228495A400CA5B08 /* player.png */; };
+		6814D311228495A400CA5B08 /* playlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D308228495A400CA5B08 /* playlist.png */; };
+		6814D312228495A400CA5B08 /* songs.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D309228495A400CA5B08 /* songs.png */; };
+		6814D317228499A400CA5B08 /* tabbar3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D315228499A300CA5B08 /* tabbar3.png */; };
+		6814D318228499A400CA5B08 /* tabbar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D316228499A400CA5B08 /* tabbar1.png */; };
+		6814D31A228499CE00CA5B08 /* tabbar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D319228499CE00CA5B08 /* tabbar2.png */; };
 		6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4C224A986700C56E61 /* AppDelegate.swift */; };
 		6877FF4F224A986700C56E61 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF4E224A986700C56E61 /* FirstViewController.swift */; };
 		6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6877FF50224A986700C56E61 /* SecondViewController.swift */; };
@@ -28,8 +52,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C24737E228181E00038AC35 /* default-release-cd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-release-cd.png"; sourceTree = "<group>"; };
 		0C6884102270498E00702AEB /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		0C68841222704D7300702AEB /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		0C72AC9C2282B8A000AD7E40 /* 70776.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 70776.png; sourceTree = "<group>"; };
+		0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Left_Carrot_Filled-512.png"; sourceTree = "<group>"; };
+		0C72ACA22282BA1F00AD7E40 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSongsFromPlaylist.swift; sourceTree = "<group>"; };
+		0CBB6B87228AB9CA003A563F /* pause2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause2.png; path = reproductor/Icons/pause2.png; sourceTree = SOURCE_ROOT; };
+		0CBB6B89228AC011003A563F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Don Omar Ft Lucenzo - Danza Kuduro.mp3"; sourceTree = "<group>"; };
+		6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Danny Ocean -  Me Rehuso.mp3"; sourceTree = "<group>"; };
+		6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Azucar Moreno - Mambo Tequila.mp3"; sourceTree = "<group>"; };
+		6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aitana - Telefono.mp3"; sourceTree = "<group>"; };
+		6814D301228495A300CA5B08 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = reproductor/Icons/next.png; sourceTree = SOURCE_ROOT; };
+		6814D302228495A300CA5B08 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prev.png; path = reproductor/Icons/prev.png; sourceTree = SOURCE_ROOT; };
+		6814D303228495A400CA5B08 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = reproductor/Icons/play.png; sourceTree = SOURCE_ROOT; };
+		6814D304228495A400CA5B08 /* addtoplaylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addtoplaylist.png; path = reproductor/Icons/addtoplaylist.png; sourceTree = SOURCE_ROOT; };
+		6814D305228495A400CA5B08 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = reproductor/Icons/pause.png; sourceTree = SOURCE_ROOT; };
+		6814D306228495A400CA5B08 /* deletefromplaylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = deletefromplaylist.png; path = reproductor/Icons/deletefromplaylist.png; sourceTree = SOURCE_ROOT; };
+		6814D307228495A400CA5B08 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player.png; path = reproductor/Icons/player.png; sourceTree = SOURCE_ROOT; };
+		6814D308228495A400CA5B08 /* playlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playlist.png; path = reproductor/Icons/playlist.png; sourceTree = SOURCE_ROOT; };
+		6814D309228495A400CA5B08 /* songs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = songs.png; path = reproductor/Icons/songs.png; sourceTree = SOURCE_ROOT; };
+		6814D315228499A300CA5B08 /* tabbar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar3.png; path = "reproductor/New Group/tabbar3.png"; sourceTree = SOURCE_ROOT; };
+		6814D316228499A400CA5B08 /* tabbar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar1.png; path = "reproductor/New Group/tabbar1.png"; sourceTree = SOURCE_ROOT; };
+		6814D319228499CE00CA5B08 /* tabbar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar2.png; path = "reproductor/New Group/tabbar2.png"; sourceTree = SOURCE_ROOT; };
 		6877FF49224A986700C56E61 /* reproductor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reproductor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6877FF4C224A986700C56E61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6877FF4E224A986700C56E61 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +109,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6814D2F82284955600CA5B08 /* Iconos */ = {
+			isa = PBXGroup;
+			children = (
+				6814D316228499A400CA5B08 /* tabbar1.png */,
+				6814D319228499CE00CA5B08 /* tabbar2.png */,
+				6814D315228499A300CA5B08 /* tabbar3.png */,
+				0C24737E228181E00038AC35 /* default-release-cd.png */,
+				0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */,
+				0CBB6B89228AC011003A563F /* settings.png */,
+				6814D304228495A400CA5B08 /* addtoplaylist.png */,
+				6814D306228495A400CA5B08 /* deletefromplaylist.png */,
+				0CBB6B87228AB9CA003A563F /* pause2.png */,
+				6814D301228495A300CA5B08 /* next.png */,
+				6814D305228495A400CA5B08 /* pause.png */,
+				6814D303228495A400CA5B08 /* play.png */,
+				6814D307228495A400CA5B08 /* player.png */,
+				6814D308228495A400CA5B08 /* playlist.png */,
+				6814D302228495A300CA5B08 /* prev.png */,
+				6814D309228495A400CA5B08 /* songs.png */,
+				0C72AC9C2282B8A000AD7E40 /* 70776.png */,
+				0C72ACA22282BA1F00AD7E40 /* a.png */,
+			);
+			name = Iconos;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		6877FF40224A986700C56E61 = {
 			isa = PBXGroup;
 			children = (
@@ -80,11 +154,13 @@
 		6877FF4B224A986700C56E61 /* reproductor */ = {
 			isa = PBXGroup;
 			children = (
+				0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */,
 				6877FF4C224A986700C56E61 /* AppDelegate.swift */,
 				6877FF4E224A986700C56E61 /* FirstViewController.swift */,
 				6877FF50224A986700C56E61 /* SecondViewController.swift */,
 				0C6884102270498E00702AEB /* ThirdViewController.swift */,
 				6877FF71224AE3B300C56E61 /* TableViewController.swift */,
+				0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */,
 				6877FF73224AF66600C56E61 /* CreatePlaylist.swift */,
 				6877FF75224AFBA300C56E61 /* AddToPlaylist.swift */,
 				0C68841222704D7300702AEB /* Playlist.swift */,
@@ -92,6 +168,7 @@
 				6877FF55224A986700C56E61 /* Assets.xcassets */,
 				6877FF57224A986700C56E61 /* LaunchScreen.storyboard */,
 				6877FF5A224A986700C56E61 /* Info.plist */,
+				6814D2F82284955600CA5B08 /* Iconos */,
 				6877FF62224AA0AB00C56E61 /* Songs */,
 			);
 			path = reproductor;
@@ -101,6 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				6877FF63224AA0AB00C56E61 /* A Girl in Oakland.mp3 */,
+				6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */,
+				6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */,
+				6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */,
+				6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */,
 				6877FF64224AA0AB00C56E61 /* Find My Way Home.mp3 */,
 				6877FF65224AA0AB00C56E61 /* Fingers.mp3 */,
 				6877FF66224AA0AB00C56E61 /* In Case You Forgot.mp3 */,
@@ -170,16 +251,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C72ACA12282B94C00AD7E40 /* Left_Carrot_Filled-512.png in Resources */,
+				6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 in Resources */,
+				0C24737F228181E00038AC35 /* default-release-cd.png in Resources */,
 				6877FF70224AA0AC00C56E61 /* Scarlet Fire.mp3 in Resources */,
+				6814D31A228499CE00CA5B08 /* tabbar2.png in Resources */,
+				0C72ACA32282BA1F00AD7E40 /* a.png in Resources */,
+				6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */,
+				6814D3002284959000CA5B08 /* Aitana - Telefono.mp3 in Resources */,
+				6814D311228495A400CA5B08 /* playlist.png in Resources */,
 				6877FF59224A986700C56E61 /* LaunchScreen.storyboard in Resources */,
+				6814D30D228495A400CA5B08 /* addtoplaylist.png in Resources */,
+				6814D30E228495A400CA5B08 /* pause.png in Resources */,
+				6814D30F228495A400CA5B08 /* deletefromplaylist.png in Resources */,
 				6877FF6F224AA0AC00C56E61 /* Otis McMusic.mp3 in Resources */,
+				0CBB6B88228AB9CA003A563F /* pause2.png in Resources */,
 				6877FF6E224AA0AC00C56E61 /* Mighty Fine.mp3 in Resources */,
+				0CBB6B8A228AC011003A563F /* settings.png in Resources */,
 				6877FF6D224AA0AC00C56E61 /* In Case You Forgot.mp3 in Resources */,
+				6814D318228499A400CA5B08 /* tabbar1.png in Resources */,
 				6877FF6B224AA0AC00C56E61 /* Find My Way Home.mp3 in Resources */,
+				6814D30A228495A400CA5B08 /* next.png in Resources */,
+				6814D317228499A400CA5B08 /* tabbar3.png in Resources */,
 				6877FF56224A986700C56E61 /* Assets.xcassets in Resources */,
+				6814D30C228495A400CA5B08 /* play.png in Resources */,
+				6814D312228495A400CA5B08 /* songs.png in Resources */,
 				6877FF54224A986700C56E61 /* Main.storyboard in Resources */,
 				6877FF6A224AA0AC00C56E61 /* A Girl in Oakland.mp3 in Resources */,
+				6814D30B228495A400CA5B08 /* prev.png in Resources */,
+				6814D310228495A400CA5B08 /* player.png in Resources */,
 				6877FF6C224AA0AC00C56E61 /* Fingers.mp3 in Resources */,
+				0C72AC9D2282B8A000AD7E40 /* 70776.png in Resources */,
+				6814D2FF2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */,
 				6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */,
 				6877FF72224AE3B300C56E61 /* TableViewController.swift in Sources */,
+				0CBB6B8C228AC07A003A563F /* SettingsViewController.swift in Sources */,
 				6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */,
 				0C6884112270498E00702AEB /* ThirdViewController.swift in Sources */,
 				6877FF76224AFBA300C56E61 /* AddToPlaylist.swift in Sources */,
