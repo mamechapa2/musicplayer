@@ -10,9 +10,11 @@ import UIKit
 import AVFoundation
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
+    
+    //VARIABLES
     @IBOutlet weak var myTableView3: UITableView!
     
+    //VIEWDIDLOAD
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView3.delegate = self
@@ -25,11 +27,14 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.didReceiveMemoryWarning()
     }
 
+    //TABLEVIEW
+    
+    //Devuelve el numero de canciones que hay en una playlist seleccionada anteriormente
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return Playlists[selecPlaylist].songs.count
     }
-
+    
+    //Crea cada una de las filas del table view con el nombre de las canciones en una playlist seleccionada
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell3", for: indexPath)
 
@@ -38,6 +43,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    //Si se selecciona alguna de las canciones en el table view, esta sera reproducida
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         do{
             let audioPath = Bundle.main.path(forResource: Playlists[selecPlaylist].songs[indexPath.row], ofType: ".mp3")

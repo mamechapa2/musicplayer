@@ -67,8 +67,14 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     @IBAction func play(_ sender: Any) {
         if audioPlayer.isPlaying {
            audioPlayer.pause()
+            /*if let image = UIImage(named: "pause2.png"){
+                playButton.setImage(image, for: .normal)
+            }*/
         }else{
             audioPlayer.play()
+            /*if let image = UIImage(named: "70776.png"){
+                playButton.setImage(image, for: .normal)
+            }*/
             notificaction(song: songName)
         }
         

@@ -90,7 +90,7 @@
                                     <action selector="next:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="e3v-Fj-Phk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPm-wm-POU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPm-wm-POU">
                                 <rect key="frame" x="112" y="396" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play" image="70776.png"/>
@@ -145,8 +145,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Va-wo-Z1L">
-                                <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Va-wo-Z1L">
+                                <rect key="frame" x="0.0" y="54" width="375" height="613"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hola" id="eFz-Cf-5by">
@@ -262,8 +262,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-zo-LAf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-zo-LAf">
+                                <rect key="frame" x="0.0" y="46" width="375" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="nKJ-OY-CtC">
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXa-g6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1534" y="-1582"/>
+            <point key="canvasLocation" x="1533.5999999999999" y="-1582.7586206896553"/>
         </scene>
         <!--Delete Songs From Playlist-->
         <scene sceneID="frH-M7-MZL">
@@ -366,7 +366,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rv-tE-2Zt">
                                 <rect key="frame" x="16" y="20" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="s7x-4H-eIw"/>
+                                    <constraint firstAttribute="width" constant="46" id="jtw-fm-Mwj"/>
                                 </constraints>
                                 <state key="normal" title="Volver"/>
                                 <connections>
@@ -374,7 +374,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jqh-g5-bAX">
-                                <rect key="frame" x="0.0" y="53" width="375" height="614"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell3" id="A4r-2h-Ju5">
@@ -388,8 +388,14 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMc-6j-q4K">
-                                <rect key="frame" x="307" y="20" width="99" height="48"/>
-                                <state key="normal" title="Borrar" image="deletefromplaylist.png"/>
+                                <rect key="frame" x="305" y="23" width="61" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="b9l-qL-XPV"/>
+                                    <constraint firstAttribute="height" constant="27" id="lub-XO-427"/>
+                                </constraints>
+                                <state key="normal" title="Borrar">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="KYE-I7-Oor" kind="show" id="TqK-Th-szw"/>
                                 </connections>
@@ -397,14 +403,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="leading" secondItem="4i8-AG-2cp" secondAttribute="leadingMargin" id="4eQ-6i-EkH"/>
-                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="top" secondItem="nMc-6j-q4K" secondAttribute="top" id="8dG-xZ-DZV"/>
-                            <constraint firstItem="jqh-g5-bAX" firstAttribute="bottom" secondItem="Yb3-gO-B1T" secondAttribute="bottom" id="MTe-dp-yRZ"/>
-                            <constraint firstAttribute="trailing" secondItem="jqh-g5-bAX" secondAttribute="trailing" id="Q4b-Vc-7OE"/>
-                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="top" secondItem="Yb3-gO-B1T" secondAttribute="top" id="c2N-SK-YyM"/>
-                            <constraint firstItem="jqh-g5-bAX" firstAttribute="leading" secondItem="4i8-AG-2cp" secondAttribute="leading" id="dlL-v7-25z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nMc-6j-q4K" secondAttribute="trailing" constant="-47" id="jUP-2r-5R2"/>
-                            <constraint firstItem="jqh-g5-bAX" firstAttribute="top" secondItem="1Rv-tE-2Zt" secondAttribute="bottom" constant="3" id="s1e-8T-UUe"/>
+                            <constraint firstItem="jqh-g5-bAX" firstAttribute="top" secondItem="1Rv-tE-2Zt" secondAttribute="bottom" constant="20" id="0Zg-5F-fNC"/>
+                            <constraint firstItem="jqh-g5-bAX" firstAttribute="leading" secondItem="4i8-AG-2cp" secondAttribute="leading" id="5bG-GN-oI0"/>
+                            <constraint firstAttribute="trailing" secondItem="jqh-g5-bAX" secondAttribute="trailing" id="DWz-6K-VJl"/>
+                            <constraint firstItem="Yb3-gO-B1T" firstAttribute="trailing" secondItem="nMc-6j-q4K" secondAttribute="trailing" constant="9" id="VVW-JM-CLw"/>
+                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="bottom" secondItem="nMc-6j-q4K" secondAttribute="bottom" id="avA-ub-DKL"/>
+                            <constraint firstItem="jqh-g5-bAX" firstAttribute="bottom" secondItem="Yb3-gO-B1T" secondAttribute="bottom" id="cYV-R3-mb2"/>
+                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="top" secondItem="Yb3-gO-B1T" secondAttribute="top" id="iVZ-J6-Hxf"/>
+                            <constraint firstItem="1Rv-tE-2Zt" firstAttribute="leading" secondItem="4i8-AG-2cp" secondAttribute="leadingMargin" id="tKf-ew-1Bu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yb3-gO-B1T"/>
                     </view>
@@ -415,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-GU-Jx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="-520"/>
+            <point key="canvasLocation" x="1533.5999999999999" y="-520.38980509745136"/>
         </scene>
     </scenes>
     <resources>
@@ -424,7 +430,6 @@
         <image name="a.png" width="512" height="512"/>
         <image name="addtoplaylist.png" width="48" height="48"/>
         <image name="default-release-cd.png" width="600" height="600"/>
-        <image name="deletefromplaylist.png" width="48" height="48"/>
         <image name="first" width="20" height="20"/>
         <image name="second" width="20" height="20"/>
         <image name="tabbar1.png" width="20" height="20"/>
@@ -432,6 +437,6 @@
         <image name="tabbar3.png" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ws4-us-qPn"/>
+        <segue reference="AhI-Ap-yOy"/>
     </inferredMetricsTieBreakers>
 </document>
