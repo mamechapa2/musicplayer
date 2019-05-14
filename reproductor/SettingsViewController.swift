@@ -8,30 +8,30 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+var volumenAnterior = audioPlayer.volume
 
+class SettingsViewController: UIViewController {
+    
+    //VARIABLES
+    //Slider para controlar el volumen
     @IBOutlet weak var volumen: UISlider!
     
+    //VIEWDIDLOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        volumen.value = Float(volumenAnterior)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        volumen.value = Float(volumenAnterior)
+    }
+    
+    //CAMBIARVOLUMEN
+    //Modifica el volumen de la reproduccion en funcion del valor del slider
     @IBAction func cambiarVolumen(_ sender: UISlider) {
         if audioStuffed{
             audioPlayer.volume = sender.value
+            volumenAnterior = sender.value
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
