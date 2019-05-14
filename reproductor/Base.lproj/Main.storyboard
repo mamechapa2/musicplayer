@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="1049.3253373313344"/>
+            <point key="canvasLocation" x="-806" y="803"/>
         </scene>
         <!--Reproductor-->
         <scene sceneID="wg7-f3-ORb">
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2093.5999999999999" y="497.90104947526243"/>
+            <point key="canvasLocation" x="745" y="803"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Bmn-Gb-AAS">
@@ -192,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YU-bN-8fJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166" y="673"/>
+            <point key="canvasLocation" x="1564" y="803"/>
         </scene>
         <!--Add To Playlist-->
         <scene sceneID="qYH-2Y-ch4">
@@ -244,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keD-0i-fYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="929.68515742128943"/>
+            <point key="canvasLocation" x="-18" y="803"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -263,7 +263,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-823" y="27"/>
         </scene>
         <!--Create Playlist-->
         <scene sceneID="Mtt-dV-PLL">
@@ -309,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONJ-FL-nHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3102" y="-150"/>
+            <point key="canvasLocation" x="201" y="27"/>
         </scene>
         <!--Playlists-->
         <scene sceneID="GbI-18-2sP">
@@ -360,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXa-g6-ljv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="-1582.7586206896553"/>
+            <point key="canvasLocation" x="1121" y="-340"/>
         </scene>
         <!--Delete Songs From Playlist-->
         <scene sceneID="frH-M7-MZL">
@@ -410,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgk-BT-lkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-257" y="-1100"/>
+            <point key="canvasLocation" x="-823" y="-785"/>
         </scene>
         <!--Item-->
         <scene sceneID="h3c-Pk-bVf">
@@ -478,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g4B-GU-Jx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="-520.38980509745136"/>
+            <point key="canvasLocation" x="201" y="-786"/>
         </scene>
     </scenes>
     <resources>
@@ -495,6 +495,6 @@
         <image name="tabbar3.png" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="m6S-kf-F6u"/>
+        <segue reference="AhI-Ap-yOy"/>
     </inferredMetricsTieBreakers>
 </document>
