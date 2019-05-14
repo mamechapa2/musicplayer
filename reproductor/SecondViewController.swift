@@ -21,6 +21,8 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     @IBOutlet weak var moverseCancion: UISlider!
     //Label para mostrar el tiempo de reproduccion actual
     @IBOutlet weak var tiempoActual: UILabel!
+    //Boton de play
+    @IBOutlet weak var playButton: UIButton!
     
     //VIEWDIDLOAD
     /*Configura las notificaciones, cambia el label a la cancion en reproduccion, el valor maximo del slider a la duraccion de la cancion.
@@ -184,7 +186,8 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     @objc func updateSlider(){
         moverseCancion.value = Float(audioPlayer.currentTime)
         tiempoActual.text = String(Int(audioPlayer.currentTime)) + "/" + String(Int(audioPlayer.duration))
-        NSLog(String(Float(audioPlayer.currentTime)))
+        
+        //NSLog(String(Float(audioPlayer.currentTime)))
     }
     
     //USERNOTIFICATIONCENTER

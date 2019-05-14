@@ -15,9 +15,9 @@
 		0C72ACA32282BA1F00AD7E40 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72ACA22282BA1F00AD7E40 /* a.png */; };
 		0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */; };
 		6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */; };
-		6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 */; };
+		6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */; };
 		6814D2FF2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */; };
-		6814D3002284959000CA5B08 /* Aitana - Teléfono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FC2284959000CA5B08 /* Aitana - Teléfono.mp3 */; };
+		6814D3002284959000CA5B08 /* Aitana - Telefono.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */; };
 		6814D30A228495A400CA5B08 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D301228495A300CA5B08 /* next.png */; };
 		6814D30B228495A400CA5B08 /* prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D302228495A300CA5B08 /* prev.png */; };
 		6814D30C228495A400CA5B08 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6814D303228495A400CA5B08 /* play.png */; };
@@ -57,9 +57,9 @@
 		0C72ACA22282BA1F00AD7E40 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSongsFromPlaylist.swift; sourceTree = "<group>"; };
 		6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Don Omar Ft Lucenzo - Danza Kuduro.mp3"; sourceTree = "<group>"; };
-		6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Danny Ocean -  Me Rehúso.mp3"; sourceTree = "<group>"; };
+		6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Danny Ocean -  Me Rehuso.mp3"; sourceTree = "<group>"; };
 		6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Azucar Moreno - Mambo Tequila.mp3"; sourceTree = "<group>"; };
-		6814D2FC2284959000CA5B08 /* Aitana - Teléfono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aitana - Teléfono.mp3"; sourceTree = "<group>"; };
+		6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aitana - Telefono.mp3"; sourceTree = "<group>"; };
 		6814D301228495A300CA5B08 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = reproductor/Icons/next.png; sourceTree = SOURCE_ROOT; };
 		6814D302228495A300CA5B08 /* prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prev.png; path = reproductor/Icons/prev.png; sourceTree = SOURCE_ROOT; };
 		6814D303228495A400CA5B08 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = reproductor/Icons/play.png; sourceTree = SOURCE_ROOT; };
@@ -169,9 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				6877FF63224AA0AB00C56E61 /* A Girl in Oakland.mp3 */,
-				6814D2FC2284959000CA5B08 /* Aitana - Teléfono.mp3 */,
+				6814D2FC2284959000CA5B08 /* Aitana - Telefono.mp3 */,
 				6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */,
-				6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 */,
+				6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */,
 				6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */,
 				6877FF64224AA0AB00C56E61 /* Find My Way Home.mp3 */,
 				6877FF65224AA0AB00C56E61 /* Fingers.mp3 */,
@@ -243,13 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C72ACA12282B94C00AD7E40 /* Left_Carrot_Filled-512.png in Resources */,
-				6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehúso.mp3 in Resources */,
+				6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 in Resources */,
 				0C24737F228181E00038AC35 /* default-release-cd.png in Resources */,
 				6877FF70224AA0AC00C56E61 /* Scarlet Fire.mp3 in Resources */,
 				6814D31A228499CE00CA5B08 /* tabbar2.png in Resources */,
 				0C72ACA32282BA1F00AD7E40 /* a.png in Resources */,
 				6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */,
-				6814D3002284959000CA5B08 /* Aitana - Teléfono.mp3 in Resources */,
+				6814D3002284959000CA5B08 /* Aitana - Telefono.mp3 in Resources */,
 				6814D311228495A400CA5B08 /* playlist.png in Resources */,
 				6877FF59224A986700C56E61 /* LaunchScreen.storyboard in Resources */,
 				6814D30D228495A400CA5B08 /* addtoplaylist.png in Resources */,

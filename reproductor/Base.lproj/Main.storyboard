@@ -99,20 +99,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="db6-AA-qSY">
-                                <rect key="frame" x="118" y="38" width="138" height="45"/>
+                                <rect key="frame" x="16" y="38" width="342" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIU-mW-4FD">
-                                <rect key="frame" x="305" y="23" width="101" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Añadir" image="addtoplaylist.png"/>
-                                <connections>
-                                    <segue destination="VHl-9X-yqf" kind="show" id="Nid-Fe-qwI"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inW-XR-9m0">
                                 <rect key="frame" x="203" y="565" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -120,6 +112,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIU-mW-4FD">
+                                <rect key="frame" x="294" y="396" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="addtoplaylist.png"/>
+                                <connections>
+                                    <segue destination="VHl-9X-yqf" kind="show" id="Nid-Fe-qwI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -129,6 +129,7 @@
                         <outlet property="label" destination="db6-AA-qSY" id="tkc-5l-ed2"/>
                         <outlet property="moverseCancion" destination="tr3-sf-dbZ" id="5Do-GJ-36W"/>
                         <outlet property="myImageView" destination="gL9-A8-4uA" id="Bs1-8B-I2W"/>
+                        <outlet property="playButton" destination="tPm-wm-POU" id="EhI-V0-T0L"/>
                         <outlet property="tiempoActual" destination="inW-XR-9m0" id="8IL-Bk-swe"/>
                     </connections>
                 </viewController>
