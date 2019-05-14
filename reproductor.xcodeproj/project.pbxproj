@@ -15,6 +15,8 @@
 		0C72ACA32282BA1F00AD7E40 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C72ACA22282BA1F00AD7E40 /* a.png */; };
 		0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */; };
 		0CBB6B88228AB9CA003A563F /* pause2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB6B87228AB9CA003A563F /* pause2.png */; };
+		0CBB6B8A228AC011003A563F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB6B89228AC011003A563F /* settings.png */; };
+		0CBB6B8C228AC07A003A563F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */; };
 		6814D2FD2284959000CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */; };
 		6814D2FE2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */; };
 		6814D2FF2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */; };
@@ -58,6 +60,8 @@
 		0C72ACA22282BA1F00AD7E40 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		0C72ACA62282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSongsFromPlaylist.swift; sourceTree = "<group>"; };
 		0CBB6B87228AB9CA003A563F /* pause2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause2.png; path = reproductor/Icons/pause2.png; sourceTree = SOURCE_ROOT; };
+		0CBB6B89228AC011003A563F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6814D2F92284958F00CA5B08 /* Don Omar Ft Lucenzo - Danza Kuduro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Don Omar Ft Lucenzo - Danza Kuduro.mp3"; sourceTree = "<group>"; };
 		6814D2FA2284959000CA5B08 /* Danny Ocean -  Me Rehuso.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Danny Ocean -  Me Rehuso.mp3"; sourceTree = "<group>"; };
 		6814D2FB2284959000CA5B08 /* Azucar Moreno - Mambo Tequila.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Azucar Moreno - Mambo Tequila.mp3"; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				6814D315228499A300CA5B08 /* tabbar3.png */,
 				0C24737E228181E00038AC35 /* default-release-cd.png */,
 				0C72AC9F2282B94C00AD7E40 /* Left_Carrot_Filled-512.png */,
+				0CBB6B89228AC011003A563F /* settings.png */,
 				6814D304228495A400CA5B08 /* addtoplaylist.png */,
 				6814D306228495A400CA5B08 /* deletefromplaylist.png */,
 				0CBB6B87228AB9CA003A563F /* pause2.png */,
@@ -159,6 +164,7 @@
 				6877FF75224AFBA300C56E61 /* AddToPlaylist.swift */,
 				0C68841222704D7300702AEB /* Playlist.swift */,
 				6877FF52224A986700C56E61 /* Main.storyboard */,
+				0CBB6B8B228AC07A003A563F /* SettingsViewController.swift */,
 				6877FF55224A986700C56E61 /* Assets.xcassets */,
 				6877FF57224A986700C56E61 /* LaunchScreen.storyboard */,
 				6877FF5A224A986700C56E61 /* Info.plist */,
@@ -261,6 +267,7 @@
 				6877FF6F224AA0AC00C56E61 /* Otis McMusic.mp3 in Resources */,
 				0CBB6B88228AB9CA003A563F /* pause2.png in Resources */,
 				6877FF6E224AA0AC00C56E61 /* Mighty Fine.mp3 in Resources */,
+				0CBB6B8A228AC011003A563F /* settings.png in Resources */,
 				6877FF6D224AA0AC00C56E61 /* In Case You Forgot.mp3 in Resources */,
 				6814D318228499A400CA5B08 /* tabbar1.png in Resources */,
 				6877FF6B224AA0AC00C56E61 /* Find My Way Home.mp3 in Resources */,
@@ -289,6 +296,7 @@
 				0C72ACA72282BC8E00AD7E40 /* DeleteSongsFromPlaylist.swift in Sources */,
 				6877FF51224A986700C56E61 /* SecondViewController.swift in Sources */,
 				6877FF72224AE3B300C56E61 /* TableViewController.swift in Sources */,
+				0CBB6B8C228AC07A003A563F /* SettingsViewController.swift in Sources */,
 				6877FF4D224A986700C56E61 /* AppDelegate.swift in Sources */,
 				0C6884112270498E00702AEB /* ThirdViewController.swift in Sources */,
 				6877FF76224AFBA300C56E61 /* AddToPlaylist.swift in Sources */,
