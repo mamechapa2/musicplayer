@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 
-
-var favorites:[String] = []
+//VARIABLES
+//Array en el cual son almacenadas todas las playlist
 var Playlists:[Playlist] = []
+//Variable usada para almacenar que playlist se ha seleccionado para mostrar sus canciones
 var selecPlaylist = 0
+//Variable que se usa para saber si es la primera vez que se abre el reproductor o no
 var firstOpen2 = true
 
 class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
