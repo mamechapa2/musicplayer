@@ -103,7 +103,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     //GETTINGSONGNAME
     /*Obtiene todos los nombres de las canciones y los guarda en un array.
-    Despues recarga el table view.*/
+    Despues recarga el table view. Es llamada desde la funcion viewDidLoad de esta misma clase.*/
     func gettingSongName(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
         

@@ -149,7 +149,7 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     //PLAYTHIS
-    //Reproduce la cancion que se pase por parametro
+    //Reproduce la cancion que se pase por parametro. Es llamada desde la action play de esta misma clase.
     func playThis(thisOne:String){
         do{
             let audioPath = Bundle.main.path(forResource: thisOne, ofType: ".mp3")
@@ -162,12 +162,11 @@ class SecondViewController: UIViewController, UNUserNotificationCenterDelegate {
         }
     }
     
-    
-    
     //NOTIFICATION
     /*Crea una notificacion cuyo contenido sera obtenido de la cancion en reproduccion.
     La notificacion mostrara un texto "Reproduciendo: " junto con el nombre de la cancion.
-    Por ultimo, se lanza la notificacion*/
+    Por ultimo, se lanza la notificacion. Esta funcion es llamada desde cada una de las funciones
+    que cambien de cancion en reproduccion(prev, next)*/
     func notificaction(song: String){
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
         
